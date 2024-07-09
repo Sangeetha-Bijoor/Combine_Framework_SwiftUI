@@ -18,7 +18,7 @@ extension String {
         if let date = isoDateFormatter.date(from: self) {
             // Step 2: Format the date to the desired string
             let desiredDateFormatter = DateFormatter()
-            desiredDateFormatter.dateFormat = "dd-MM-yyyy HH:mm:ss"
+            desiredDateFormatter.dateFormat = "dd MMM yyyy"
             desiredDateFormatter.timeZone = TimeZone.current // Use the current time zone if needed
             let formattedDateString = desiredDateFormatter.string(from: date)
             return formattedDateString

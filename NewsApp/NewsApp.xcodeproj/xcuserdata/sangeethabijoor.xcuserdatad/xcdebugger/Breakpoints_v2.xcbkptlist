@@ -82,36 +82,6 @@
             endingLineNumber = "20"
             landmarkName = "fetchNewsArticles(withSourceId:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EA61FE88-3E80-4370-A7E5-EAD4A7113D9A - 1b87102122176b71"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsApp.NewsListViewModel.fetchNewsArticles(withSourceId: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "NewsApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Development/Learning/SwiftUI_Combine/SwiftUI_Async_Await/News_App_Combine_Framework/NewsApp/NewsApp/ViewModel/NewsListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20">
-               </Location>
-               <Location
-                  uuid = "EA61FE88-3E80-4370-A7E5-EAD4A7113D9A - e084af9f12aadc95"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in NewsApp.NewsListViewModel.fetchNewsArticles(withSourceId: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "NewsApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Development/Learning/SwiftUI_Combine/SwiftUI_Async_Await/News_App_Combine_Framework/NewsApp/NewsApp/ViewModel/NewsListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -144,36 +114,6 @@
             endingLineNumber = "21"
             landmarkName = "fetchNewsSources()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3BAE80B9-5746-4225-9DD1-D54CCFC2AF09 - a52efe42e01bc0c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in NewsApp.NewsSourceViewModel.fetchNewsSources() -&gt; ()"
-                  moduleName = "NewsApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Development/Learning/SwiftUI_Combine/SwiftUI_Async_Await/News_App_Combine_Framework/NewsApp/NewsApp/ViewModel/NewsSourceViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21">
-               </Location>
-               <Location
-                  uuid = "3BAE80B9-5746-4225-9DD1-D54CCFC2AF09 - a52efe42e01bc0c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in NewsApp.NewsSourceViewModel.fetchNewsSources() -&gt; ()"
-                  moduleName = "NewsApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Development/Learning/SwiftUI_Combine/SwiftUI_Async_Await/News_App_Combine_Framework/NewsApp/NewsApp/ViewModel/NewsSourceViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
