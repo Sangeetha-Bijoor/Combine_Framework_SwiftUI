@@ -10,30 +10,47 @@ import SwiftUI
 struct NewsListTableViewCell: View {
     
     var newsArticle : NewsArticle
+    @State private var isPresented: Bool = false
     
     var body: some View {
-        HStack(alignment: .top) {
-            VStack {
-                AsyncImage(url: URL(string: newsArticle.urlToImage) ) { image in
-                    image.resizable()
-                        .frame(maxWidth: 100, maxHeight: 100)
-                } placeholder: {
-                    ProgressView("Loading...")
-                        .frame(maxWidth: 100, maxHeight: 100)
-                }
-                
+        VStack(alignment: .leading) {
+            Text(newsArticle.title)
+                .fontWeight(.bold)
+            HStack {
+                Spacer()
                 Text(newsArticle.publishedDate)
             }
-            
-            VStack {
-                Text(newsArticle.title)
-                    .fontWeight(.bold)
-                Text(newsArticle.description)
+            AsyncImage(url: URL(string: newsArticle.urlToImage) ) { image in
+                image.resizable()
+                    .frame(maxWidth: UIScreen.main.bounds.width - 30, maxHeight: 250)
+                    .cornerRadius(10)
+                    .aspectRatio(contentMode: .fill)
+                    .clipped()
+                    .shadow(color: .black, radius: 5, x: 5, y: 5)
+            } placeholder: {
+                ProgressView("Loading...")
+                    .frame(maxWidth: 100, maxHeight: 100)
             }
+            Spacer()
+            Text(newsArticle.description)
+            Spacer()
+            Text(newsArticle.author)
+                .foregroundColor(.white)
+                .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
+                .font(.subheadline)
+                .fontDesign(.rounded)
+                .background(.black)
+                .cornerRadius(10.0)
+            Spacer()
+        }.sheet(isPresented: $isPresented) {
+            NewsArticleWebView(newsUrl: self.newsArticle.url)
+        }
+        .onTapGesture {
+            isPresented.toggle()
         }
     }
 }
 
 #Preview {
-    NewsListTableViewCell(newsArticle: NewsArticle(author: "", title: "Title", description: "My description", url: "", urlToImage: "https://i.abcnewsfe.com/a/2b50a280-440c-415f-8beb-fe66349d364f/GettyImages-2141954357_1719891847602_hpMain_16x9.jpg?w=1600", publishedAt: "", content: ""))
+    NewsListTableViewCell(newsArticle: NewsArticle(author: "", title: "Title", description: "My description", url: "", urlToImage: "", publishedAt: "", content: ""))
 }
